@@ -17,11 +17,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "jsx": "^0.9.89",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
@@ -31,11 +27,10 @@
     "babelify": "^8.0.0",
     "browserify": "^16.2.2",
     "gulp": "^4.0.0",
-    "gulp-if": "^2.0.2",
-    "gulp-run": "^1.7.1",
+    "jsx": "^0.9.89",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
     "tsify": "^4.0.0",
-    "typescript": "^3.1.6",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "typescript": "^3.1.6"
   }
 }
