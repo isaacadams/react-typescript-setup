@@ -23388,16 +23388,13 @@ if (process.env.NODE_ENV === 'production') {
 var __importDefault = undefined && undefined.__importDefault || function (mod) {
     return mod && mod.__esModule ? mod : { "default": mod };
 };
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var react_1 = __importDefault(require("react"));
 exports.Dropdown = function (props) {
-    var options = [];
     var items = props.items;
-    items.forEach(function (value, i) {
-        var option = react_1.default.createElement("option", { key: i }, value);
-        options.push(option);
-    });
-    return react_1.default.createElement("select", { defaultValue: items[0], className: props.className }, options);
+    return react_1["default"].createElement("select", { defaultValue: items[0], className: props.className }, items.map(function (value, i) {
+        return react_1["default"].createElement("option", { key: i }, value);
+    }));
 };
 
 },{"react":10}],18:[function(require,module,exports){
@@ -23422,7 +23419,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var React = __importStar(require("react"));
 var ReactDOM = __importStar(require("react-dom"));
 var dropdown_jsx_1 = require("./components/dropdown.jsx");
